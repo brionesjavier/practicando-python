@@ -19,3 +19,27 @@ contenidos visto
 nota
 revisar identacion y mayusculas 
 tipo de dato que recibe por defecto las url son string
+
+
+*********************plantilla***************************
+se puede colocar la direcion completa para que lea un archivo cambiando los \ por / 
+y la otra manera es colocar solo la direcion de la carpeta ejemplo largo:
+
+C:/Users/javier/Documents/github/practicando-python/Django/ProyectoDjango/Proyecto1/Proyecto1/plantilla/miplantilla.html"
+Ejemplo corto solo cuando esta el template en la carpeta:
+Proyecto1/plantilla/miplantilla.html
+
+para poder usar plantilla se exporta los packetes 
+
+from django.template import Template, Context
+
+luego se crea un objeto tipo plantilla
+plt= template(doc_Externo.red())
+
+y se crea un contexto para contenidos dinamicos sino se deja vacio
+
+ctx =Context() 
+
+renderizado del objeto template 
+
+documento = plt.render(ctx)
