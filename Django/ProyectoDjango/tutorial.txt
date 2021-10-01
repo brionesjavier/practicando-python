@@ -14,5 +14,8 @@ python manage.exe runserver
 contenidos visto 
     *funciones httpResponse, Request ,
     *importar vistas(views), direciones(urls)
+    *pasar parametros por url y verlos por vistas
 
+nota
 revisar identacion y mayusculas 
+tipo de dato que recibe por defecto las url son string
