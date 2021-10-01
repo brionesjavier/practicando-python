@@ -1,0 +1,3 @@
+comenzamos el proyecto
+
+django-admin startproyect nombreProyecto
