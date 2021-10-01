@@ -9,3 +9,10 @@ python manage.py migrate
 ahora ejecutamos el servidor local 
 
 python manage.exe runserver
+
+
+contenidos visto 
+    *funciones httpResponse, Request ,
+    *importar vistas(views), direciones(urls)
+
+revisar identacion y mayusculas 
