@@ -1,3 +1,11 @@
 comenzamos el proyecto
 
-django-admin startproyect nombreProyecto
+django-admin startproject nombreProyecto
+
+hacemos una migracion para esto tenemos que estar dentro de la carpeta del proyecto
+
+python manage.py migrate
+
+ahora ejecutamos el servidor local 
+
+python manage.exe runserver
