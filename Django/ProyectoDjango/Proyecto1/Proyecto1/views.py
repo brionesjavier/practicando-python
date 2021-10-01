@@ -1,15 +1,16 @@
 from django.http import HttpResponse
 import datetime
+from django.template import Template, Context
 
 def saludo(request):
     #return HttpResponse("Hola alumnos esta es nuestra primera pagina con Django")
-    documento="""<html>
-    <body>
-    <h1>
-    Hola alumnos esta es nuestra primera pagina con Django
-    </h1>
-    </body>
-    </html>"""
+    doc_externo=open("Proyecto1/plantilla/miplantilla.html")
+    
+    plt=Template(doc_externo.read())  
+    doc_externo.close() 
+    ctx =Context()
+    documento = plt.render(ctx)
+    
     return HttpResponse(documento)
 
 def despedida(request):
